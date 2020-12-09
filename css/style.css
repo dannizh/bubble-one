@@ -1,0 +1,1071 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+head{
+    font-size: 16px;
+}
+body {
+    font-family: 'Poppins','Montserrat', sans-serif;
+    color: #20272F;
+    line-height: 1.6;
+    height: 100%;
+    font-size: 16px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1{
+    /* font-size: 3rem; */
+    text-align: center;
+    line-height: 2.7;
+    font-weight: 900;
+    margin: 20px 0 10px;
+}
+
+  
+h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+}
+p {
+    margin: 10px, 0;
+}
+
+.container {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+
+/* Jump to Main Page */
+#skip a{
+    background: #20272F;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  #skip a:focus{
+    top: 3px;
+    color: #fff;
+    text-decoration-style: solid;
+    border: 3px solid #fff;
+  }
+  
+/* Narvar */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(32,39,47,.95);
+    position: relative;
+
+  }
+  
+  .topnav #nav_links {
+    font-family:'Montserrat';
+    font-weight: 600;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  
+  .topnav .nav_item > a {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+    
+  }
+  
+  .topnav a.icon {
+    background: #f28482;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    padding: 14px 16px;
+    border-radius: 5px;
+  }
+  #nav_links a:hover {
+    color: #fff;
+    font-weight: 800;
+    border-bottom: 2px #fff solid;
+}
+#nav_links .current {
+    color: #ECA088;
+    border: 2px solid #ECA088;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+#nav_links .current:hover, .current:focus {
+    color: #ECA088;
+    border: 2px solid #ECA088;
+    font-weight: 800;
+    
+}
+.logo span {
+    color: #ff9b85;
+} 
+.logo a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.typer {
+    display: none;
+}
+/* header .flex {
+    background-color:rgba(32,39,47,.95);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+  }
+
+header .nav_links {
+    color: #fff;
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 7px;
+  
+}
+
+.nav_links a:hover {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding: 2px;
+    margin: 2px;
+    
+
+}
+
+.nav_links .current {
+    color: #ECA088;
+    border: 2px solid #ECA088;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+
+}
+.nav_links .current:hover, .current:focus {
+    color: #ECA088;
+    border: 2px solid #ECA088;
+    font-weight: bolder;
+    
+}
+
+*/
+/* Showcase */
+.parallex {
+    position:relative;
+    height:86vh;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.parallex::before {
+    content: "";
+    position: absolute;
+    background-image:  url('../img/bubble.png');
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.caption {
+    font-family:"Montserrat";
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .9);
+    top: 20%;
+    border-radius: 15px;
+    padding-bottom: 10%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    padding: 10px 10px;
+    width: 50%;
+    cursor: pointer;
+    background-color: #3e3a42;
+    color:#fff;
+    border: none;
+    border-radius: 35px;
+    top: 30%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.btn:hover {
+    transform: scale(.95);
+    background-color: #29252d;
+    color: #fff;
+}
+
+/* Choice */
+.choice h1  {
+    font-size:1.2rem;
+    font-family:"Montserrat";
+    word-spacing: 5px;
+    margin-top: 20%;
+    border: #29252d 5px solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.choice h2 {
+    font-size:1rem;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-bottom: #29252d solid 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.grid img {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+}
+.grid {
+    justify-content: center;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr, 200px);
+    row-gap: 0.5fr;
+}
+
+.choice .btn {
+    margin-bottom: 10%;
+    border-radius: 5px;
+    width: 40%;
+}
+.text-content {
+    display: none;
+}
+h1 img {
+    display: none;
+}
+#about {
+   
+    
+}
+/* Footer */
+footer {
+    
+    background-color:rgba(32,39,47,.95);
+    color: #fff;
+    text-align: center; 
+    bottom:0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0 ;
+
+}
+
+footer .social a {
+    margin: 5%;
+}
+footer .social a:focus {
+    border: none;
+} 
+
+/* Drinks showcase */
+.drinks .menu, .shops .title {
+    font-family:"Montserrat";
+    font-size: 2rem;
+    font-weight: 800;
+    border-bottom: #29252d 3px solid;
+    width: 50%;
+    margin: 5% auto;
+}
+
+.drinks .grid-2 img {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display:block;
+}
+.drinks .grid-2 p, .grid-2 .user-rating, .shops p {
+    color: #29252d;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.drinks .grid-2 p,.grid-2 .user-rating {
+    width: 50%;
+}
+
+.drinks .grid-2 p, .shops .grid-2 p {
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+.drinks .overlay {
+    display:none;
+}
+
+.product a:hover {
+    color: #f4978e;
+    font-weight: 700;
+}
+ .grid-2 {
+    margin-top: 10%;   
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    grid-template-rows: repeat(11, auto auto);
+}
+
+.drinks .grid-2 {
+    margin-top: 10%;   
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    overflow: hidden;
+    /* grid-template-rows: repeat(11, auto 1fr); */
+}
+
+.user-rating:last-child, .shops .shop:last-child {
+    margin-bottom: 5%;
+}
+
+.user-rating span {
+    color: #ce4257;
+    
+}
+
+
+.product a, .user-rating .heading {
+    color: #29252d;
+}
+
+/* contact */
+
+.contact-form {
+    font-size: 1rem;
+    justify-self: center;
+    height: auto;
+    width: 80%;
+    padding: 10%;
+    margin: 20% auto;
+    margin-bottom: 50%;
+}
+
+.contact-form .form-control {
+    margin: 15% 0;
+}
+
+.contact-form input[type = "text"],
+.contact-form input[type = "email"] {
+    border: 0;
+    border-bottom: 1px solid #bebecb;
+    width: 100%;
+    padding: 5%;
+    font-size: 1rem;
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+.contact-form .btn:hover {
+    transform: none;
+    background-color: #29252d;
+    color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    color: #29252d;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+}
+#about {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 5%;
+    text-align: left;
+}
+#about p{
+    margin-bottom: 5%;
+}
+/* Shops */
+
+.shops .shop p {
+    font-size: 0.7em;
+    text-align: left;
+    margin: 1% auto 5% auto;
+    font-weight: 600;
+}
+.shop p> span {
+    font-weight:600;
+    font-size:1.1em;
+    font-family: "Montserrat";
+    color:#233d4d;
+}
+.shops .btn {
+    margin-bottom: 10%;
+    border-radius: 15px;
+    width: 30%;
+    font-size: 0.7em;
+    top:5%;
+}
+
+.shops h2{
+    /* font-family: "Montserrat"; */
+    font-size:1em;
+    font-weight: 800;
+}
+.shops p {
+    font-weight: 400;
+}
+
+.shops .whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.shops .whole p span{
+    color: #233d4d;
+}
+.shops .grid-2 img {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+/* Flip Card */
+#flip {
+    display: none;
+}
+/* .flip-card {
+    margin:5%;
+    height:80%;
+    width:80%;
+    background-color: transparent;
+    perspective: 1000px; 
+    cursor: pointer;
+    padding:70px;
+    position:relative;
+    bottom: 10vh;
+    display: block;
+    margin: auto;
+  }
+  
+  .flip-card-inner {
+    color:#ffadad;
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+ 
+  .flip-card-front img, .flip-card-back img{
+      width: 80%;
+      border-radius: 10px;
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  #flip > p{
+   
+    font-family:"Montserrat";
+    font-weight: 800;
+    font-size: 1rem;
+    text-align: center;
+    margin: 15% 10%;
+    word-spacing: 5px;
+    
+  }
+  #flip> p img {
+    display: none;
+    
+} */
+
+/* Animation */
+.left {
+    animation: slideInFromLeft 1s ease-in;
+}
+.right {
+    animation: slideInFromRight 1s ease-in;
+}
+.top {
+    animation: slideInFromTop 0.5s ease-in;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) { 
+    .left {
+        animation: none;
+    }
+    .right {
+        animation: none;
+    }
+    .top {
+        animation: none;
+    }
+  }
+
+
+
+  @media screen and (min-width: 768px){
+    h1{
+        font-size: 2em;
+        line-height:2;
+    }
+    
+    .btn {
+        font-size: 1.3rem;      
+    }
+    .caption {
+        font-size: 1.5rem;
+    }
+    .box {
+        margin: 20%;
+    }
+    
+    .topnav，
+      .topnav #nav_links，
+      .topnav .nav_item > a,
+      #nav_links a:hover,
+      #nav_links .current,
+      #nav_links .current:hover, .current:focus
+      {
+        all:revert;  
+        all:unset;
+      }
+      .topnav a.icon {
+        display: none;
+      }
+      .topnav {
+          background-color: rgba(32,39,47,.95);
+      }
+
+      .topnav #nav_links {
+        font-family:'Montserrat';
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        padding:0;
+      } 
+    
+      #nav_links .current {
+        color: #000;
+        background-color: #ECA088;
+        padding: 10px;
+        margin: 2px;
+        border-radius: 5px;
+    
+    }
+    #nav_links .current:hover, .current:focus {
+        color: #fff;
+        background-color: #ECA088;
+        padding: 10px;
+        margin: 2px;
+        border-radius: 5px;
+        
+    }
+    #nav_links a:hover {
+        color: #fff;
+        border-bottom: 2px #fff solid;
+    }
+    .typer {
+        /* width: 20%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .typer img {
+        width: 10%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    
+    .typer p {
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 5%;
+    }
+      
+    .choice h1  {
+        font-size:1.7em;
+        font-family:"Montserrat";
+        word-spacing: 5px;
+        margin-top: 20%;
+        border: #29252d 5px solid;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .choice h2 {
+       font-size:1.5rem;
+       margin-left: 15%;
+       margin-right: 15%;
+    }
+    .grid img {
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .flip-card-front img, .flip-card-back img{
+        width: 80%;
+        
+    }
+    .choice .text-content {
+        display: none;
+    }
+    
+    .shops .shop p, .shops .shop p > span {
+        width: 60%;
+        font-size: 1.1em;
+        text-align: left;
+        margin: 1% auto 5% auto;
+        font-weight: 600;
+    }
+    .shops .whole p{
+        text-align: left;
+    }
+    .shops .btn {
+        margin-bottom: 10%;
+        border-radius: 15px;
+        width: 30%;
+        font-size: 1em;
+        top:5%;
+    }
+    
+    .shops h2{
+        font-size: 1.3em;
+    }
+    .shops .grid-2 img {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .shop p> span {
+        font-weight:600;
+        font-size:1.2rem;
+        font-family:"Montserrat";
+        color:#f08080;
+    }
+    .drinks .grid-2 img {
+        width: 70%;
+    }
+    .drinks .grid-2 {
+        display:grid;
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        grid-template-rows: repeat(5, auto);
+        
+    }
+    .drinks .grid-2 p, .grid-2 .user-rating {
+        width: 70%;
+    }
+    .grid-2::before  {
+        display: none;
+    }
+    .drinks .grid-2 p, .grid-2 .user-rating, .shops p {
+        font-size: 1.1em;
+    }
+    footer .container {
+        
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer .social {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-form {
+        font-size:1.2rem;
+    }
+    #flip {
+        display: block;
+    }
+    .flip-card {
+        height:80%;
+        width:80%;
+        background-color: transparent;
+        perspective: 800px; 
+        cursor: pointer;
+        position:relative;
+        display: block;
+        margin: auto;
+        padding:15%;
+        bottom: 150px;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+    
+      .flip-card:hover .flip-card-inner,
+      .flip-card:focus .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+     
+      .flip-card-front img, .flip-card-back img{
+          width: 80%;
+          border-radius: 10px;
+      }
+    
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; 
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+    
+      #flip > p{
+       
+        font-family:"Montserrat";
+        font-weight: 800;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 15% 10%;
+        word-spacing: 5px;
+        
+      }
+      #flip> p img {
+        display: none;
+        
+    }
+    .drinks .menu, .shops .title {
+        font-size:1.5em;
+        font-family:"Montserrat";
+        word-spacing: 5px;
+        border: #29252d 5px solid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }
+  
+  @media screen and (min-width: 992px){
+    .choice .text-content {
+        display: block;
+    }
+    .grid {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 0.5fr;
+    }
+    .text-content {
+        font-size: 1.2rem;
+        font-weight:500;
+        margin-bottom: 40%;
+        padding:10% 5%;
+        border: 5px solid #ECA088;
+        border-radius: 10px;
+    }
+    .btn, .choice .btn {
+        width: 20%;
+    }
+    .typer {
+        display: none;
+    }    
+ 
+    .choice h1  {
+        color: #20272F;
+        background: none;
+        margin-top:10%;
+        margin-left: 7%;
+        display: inline-block;
+        font-size:3rem;
+        font-family:"Montserrat";
+        border:none;
+        text-align: left;
+        vertical-align: middle;
+        width: 80%;
+       
+    }
+    .choice h1 img, .menu img, .title img {
+        display: inline-block;
+        margin-right: 5%;
+    }
+    
+    #flip {
+        display: block;
+    }
+    .flip-card {
+        /* height:80%; */
+        width:50%;
+        background-color: transparent;
+        perspective: 800px; 
+        cursor: pointer;
+        position:relative;
+        display: block;
+        margin: auto;
+        padding:10%;
+        /* bottom: 150px; */
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+    
+      .flip-card:hover .flip-card-inner,
+      .flip-card:focus .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+     
+      .flip-card-front img, .flip-card-back img{
+          width: 80%;
+          border-radius: 10px;
+      }
+    
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; 
+        backface-visibility: hidden;
+      }
+      
+      .flip-card-back {
+        transform: rotateY(180deg);
+      }
+    
+      #flip > p{
+       
+        font-family:"Montserrat";
+        font-weight: 800;
+        font-size: 1.5rem;
+        text-align: center;
+        margin:5%;
+        /* margin: 15% 10%; */
+        word-spacing: 5px;
+        
+      }
+      #flip> p img {
+        display: none;
+        
+    }
+      
+    .shops .grid-2 {
+        left:0;
+        right:0;
+        /* margin:0; */
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        grid-template-rows: repeat(5, auto);
+        /* row-gap: 1.5fr; */
+        align-items: start;
+        justify-items:start;
+        grid-column-gap: 20%;
+
+    }
+    
+    .shops .grid-2 img {
+        width: 90%;
+        /* margin: 5% 20%; */
+    }
+    
+    .shops .whole p{
+        text-align: center;
+    }
+    .shops .whole  {
+        justify-self: center;
+    }
+    .shops .shop p, .shops .shop p > span {
+        font-size: 1.2em;
+    }
+    .shops h2 {
+        font-size: 1.4em;
+
+    }
+    .drinks .grid-2 {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        overflow: hidden;
+        grid-template-rows: repeat(4, auto);
+        
+        /* row-gap: 1.5fr; */
+    }
+    .drinks .grid-2 img {
+        width: 50%;
+        margin: 5% auto;
+        display:block;
+        
+    }
+    .drinks .grid-2 p, .grid-2 .user-rating, .shops p {
+        font-size: 1.1em;
+    }
+    .drinks .menu, .shops .title {
+        font-size: 2.3em;
+    }
+    .contact-form {
+        width: 50%;
+        
+    }
+    .card .btn {
+        width: 50%;
+    }
+    .drinks .menu, .shops .title {
+        text-align: center;
+        background:none;
+        border-radius: 0;
+    }
+    .drinks .large{
+        position: relative;
+        
+    }
+    .drinks .large-hidden{
+        display: none;
+    }
+    .drinks .large:hover .overlay{
+        opacity:0.5;
+    }
+    .drinks .overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fff;
+    }
+    .large-show {
+        font-size: 2rem;
+        font-weight:600;
+        color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .grid-2::before  {
+          display: none;
+      }
+      .overlay a:hover {
+          text-decoration:none;
+          color: #000;
+      }
+      .drinks .menu, .shops .title {
+        border: none;
+    }
+}

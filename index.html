@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bubble.One</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7NP75SWWZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L7NP75SWWZ'); 
+    </script>
+    <script src="js/utilities.js"></script>
+
+</head>
+<body>
+    <div id="skip">
+    <a href="#choice">Skip to Main Content</a>
+    </div>
+    <!-- Navbar -->
+    <header class="top topnav">
+        <!-- <div class="container flex"> -->
+            <h1 class="logo"> <a href="index.html">Bubble<span> . </span>One</a></h1>
+        <!-- <img src="images/logo.png" alt="logo" id = "logo"> -->
+            <nav>
+                <ul id="nav_links">
+                    <li class="nav_item"><a href="index.html" class="current" aria-label="Home">HOME</a></li>
+                    <li class="nav_item"><a href="drinks.html">DRINKS</a></li>
+                    <li class="nav_item"><a href="shops.html">SHOPS</a></li>
+                    <li class="nav_item"><a href="contact.html">CONTACT</a></li>
+                    
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="Drop down list button">
+                <i class="fa fa-bars"> </i>
+              </a>
+        <!-- </div> -->
+  </header>
+  
+  <!-- Showcase -->
+  <main>
+        <div class="container parallex">
+            <div class="caption">
+                <h1 class="left">WELCOME</h1>
+                <h2 class="right">Go Blue</h2>
+            </div>
+            <a href="drinks.html" class="btn">Explore Drinks</a>
+            
+        </div>
+        <div class="typer">
+            <img src="img/bubbleicon.png" onclick="typeWriter()" alt="Fortune cookie button">
+            <p id="demo"></p>
+        </div>
+        <section id="flip">
+            <p>Find Your Lucky Drink Today!</p>
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="img/panda.jpg" alt="lucky drink">
+                    <!-- <h3>Lucky Drink!</h3> -->
+                    </div>
+                <div class="flip-card-back">
+                    <img src="img/yuancha.jpg" alt="Moge Tee">
+                    <h3>Cheese Foam Strawberry Tea</h3>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    
+    <!-- Choice -->
+    <section>
+        <div class="choice" id="choice">       
+                <h1><img src="img/icon.png" alt="icon">Top Choice</h1>
+        <div class="container grid ">
+            <div class="group">
+            <img src="img/boba-guys.jpeg" alt="Boba Guys">
+                <h2>Boba Guys</h2>
+            </div>
+                <div class="text-content">Food is our craft (*the true love of our life*) and we knew our drinks and ingredients had to be top notch if we wanted to change the industry. 
+                    So what did we do? We changed standard methodologies and introduced small-batch drink making, and sourced only the finest ingredients for our drinks.</div>
+            <div class="group">    
+            <img src="img/thealley.jpg" alt="The Alley">
+                <h2>The Alley</h2>
+            </div>
+            <div class="text-content">A good cup of tea is hidden within each and every one’s heart. On that relaxing afternoon,
+                bath in sunshine’s’ warmth, sprinkle by breezy wind, charmed by a lover’s smile,
+                fulfilled by the pleasing aftertaste. Reminisce the touching satisfaction from that
+                first cup of good tea, to share this delight with everyone, to keep up with this originality,
+                give rise to “The Alley”.
+                
+                </div>
+            
+            <div class="group">
+            <img src="img/Chun-Yang-Tea.jpg" alt="Chun Yang Tea">
+                <h2>Chun Yang Tea</h2>
+            </div>
+            <div class="text-content">Unlike the others, Chun Yang Tea is famous for using only fresh ingredients - such as real tea leaves and fresh milk for each respective drinks. 
+                Each taste of the drink harbours an intense refreshing reaction that only fresh ingredients can provide. </div>
+            <div class="group">
+            <img src="img/tiger-sugar.jpg" alt="Tiger Sugar">
+                <h2>Tiger Sugar</h2>
+            </div>
+            <div class="text-content">Tigersugar is an international dessert chain brand originated in Taiwan.
+                Our intention is to let the world taste the best flavor of Taiwan boba pearl milk tea through taste and vision.
+                After more than ten years of painstaking research and development,
+                Tigersugar believes that desserts are the most relaxing, healing and relaxing food.
+                We are unique in the world, is the first "drink" dessert.</div>
+
+        </div>
+        <a href="shops.html" class="btn">More Shops</a>
+    </div>
+    </section>
+   
+</main>
+    <!-- Footer -->
+    <footer>
+        <div class="container flexbox">
+            <div class="social">
+                <a href="#" aria-label="tiktok"><i class="fab fa-tiktok fa-2x"></i></a>
+                <a href="#" aria-label="facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" aria-label="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            
+                <div class="signature">
+                    <h1 class="logo"> <a href="index.html">Bubble<span> . </span>One</a></h1>
+                </div>
+                <div class="signature">
+                    <p>Copyright &copy; 2020</p>
+                </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
