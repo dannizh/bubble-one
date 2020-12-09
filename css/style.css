@@ -304,7 +304,9 @@ footer {
     text-align: center; 
     bottom:0;
 }
-
+footer .logo > h1{
+    margin: 0;
+}
 footer .container {
     display: flex;
     flex-direction: column;
